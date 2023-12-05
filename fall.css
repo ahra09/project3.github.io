@@ -1,0 +1,427 @@
+@import url("https://use.typekit.net/dkq5oje.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "rufina", sans-serif;
+    font-family: 'Nanum Myeongjo', serif;
+    font-family: 'Quicksand', sans-serif;
+    background-color:#F0ECE1 ;
+    color: #60535A;
+    line-height: 1.5;
+}
+
+.header {
+    margin-top: 50px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav {
+    font-family: 'East Sea Dokdo', sans-serif;
+    float: right;
+}
+.nav a {
+    text-decoration: none;
+    color: #60535A;
+    font-size: 20px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+span {
+    color: #60535A;
+    display: block;
+    transition: 1s;
+}
+.nav a:hover {
+    color: #D7AC8A;
+}
+a:hover span{
+    transform: translateY(-100%);
+}
+a:before {
+    position: absolute;
+    content: attr(data-link-alt);
+    top: 100%;
+    opacity: o;
+    transition: 1s;
+}
+a:hover:before {
+    top: 0;
+}
+
+.nav li {
+    display: inline-block;
+    padding-top: 30px;
+    margin-left: 70px;
+}
+ul, li {
+    list-style: none;
+}
+.first {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+}
+.first h1 {
+    font-family: "rufina", sans-serif;
+    font-size: 100px;
+    font-weight: 800;
+    padding-top: 50px;
+    letter-spacing: 2px;
+}
+.first h2 {
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 25px;
+}
+.first p {
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 80px;
+    font-size: 17px;
+    padding-bottom: 100px;
+}
+.second {
+    text-align: center;
+    justify-content: center;
+    background-image: url(images/fall/background.png);
+    background-size: cover;
+    padding-bottom: 50px;
+    color: #F0ECE1;
+}
+.second h1{
+    font-family: "rufina", sans-serif;
+    font-size: 50px;
+    padding-top: 30px;
+}
+.recipes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}
+.left {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    align-items: center;
+}
+.japchae_title {
+    font-family: "rufina", sans-serif;
+    margin-top: -10px;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.japchae_title a:link {
+    color: #F0ECE1;
+    background-color: transparent;
+    text-decoration: none;
+}
+.japchae_title a:visited {
+    color: #F0ECE1;
+    background-color: transparent;
+    text-decoration: none;
+}
+.japchae_title a:hover {
+    color: #F0ECE1;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.left p {
+    text-align: center;
+    padding-top: 10px;
+}
+.japchae {
+    display: flex;
+}
+.japchae_image {
+    position: relative;
+}
+.japchae_image img {
+    display: block;
+}
+.japchae img:hover {
+    color: #CEBB86;
+    opacity: 60%;
+}
+.content1 {
+    width: 360px;
+    height: 230px;
+    position: absolute;
+    background: rgba(60, 56, 53, 0.49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #F0ECE1;
+    opacity: 0;
+    transition: 0.6s;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+.content1:hover {
+    opacity: 1;
+}
+.content1 > *{
+    transform: translateY(25px);
+    transition: transform 0.6s;
+}
+.content1:hover > *{
+    transform: translateY(0px);
+}
+.right {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 30px;
+    align-items: center;
+}
+.songpyeon_title {
+    font-family: "rufina", sans-serif;
+    margin-top: -10px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.songpyeon_title a:link {
+    color: #F0ECE1;
+    background-color: transparent;
+    text-decoration: none;
+}
+.songpyeon_title a:visited {
+    color: #F0ECE1;
+    background-color: transparent;
+    text-decoration: none;
+}
+.songpyeon_title a:hover {
+    color: #F0ECE1;
+    background-color: transparent;
+    text-decoration: underline;
+}
+.right p {
+    text-align: center;
+    padding-top: 10px;
+}
+.songpyeon {
+    display: flex;
+}
+.songpyeon_image {
+    position: relative;
+}
+.songpyeon_image img {
+    display: block;
+    padding-left: 10px;
+}
+.songpyeon img:hover {
+    color: black;
+    opacity: 60%;
+}
+.content2 {
+    width: 350px;
+    height: 240px;
+    position: absolute;
+    background: rgba(60, 56, 53, 0.49);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #F0ECE1;
+    opacity: 0;
+    transition: 0.6s;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 20px;
+    font-weight: 800;
+}
+.content2:hover {
+    opacity: 1;
+}
+.content2 > *{
+    transform: translateY(25px);
+    transition: transform 0.6s;
+}
+.content2:hover > *{
+    transform: translateY(0px);
+}
+.third {
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.third h1{
+    font-family: "rufina", sans-serif;
+    font-size: 50px;
+    padding-top: 50px;
+}
+.activity {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+.folk {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    align-items: center;
+}
+.folk h3 {
+    font-family: "rufina", sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.folk h4 {
+    font-family: 'Nanum Myeongjo', serif;
+}
+.folk p {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    max-width: 370px;
+    font-size: 14px;
+    padding-top: 15px;
+}
+.container1 {
+    position: relative;
+}
+.overlay1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+}
+.container1:hover .overlay1 {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+.yutnori {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    align-items: center;
+}
+.yutnori h3 {
+    font-family: "rufina", sans-serif;
+    font-size: 20px;
+    padding-top: 10px;
+}
+.yutnori h4 {
+    font-family: 'Nanum Myeongjo', serif;
+}
+.yutnori p {
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    max-width: 370px;
+    font-size: 14px;
+    padding-top: 15px;
+}
+.container2 {
+    position: relative;
+}
+.overlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+}
+.container2:hover .overlay2 {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+:root { scroll-behavior: smooth;
+}
+.stt {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: #60535A url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 384 512'%3E%3Cpath fill='currentColor' d='M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z'%3E%3C/path%3E%3C/svg%3E") center no-repeat;
+    box-shadow: 0 0.25rem 0.5rem 0 gray;
+    opacity: 0.7;
+}
+  .stt:hover {
+    opacity: 0.8;
+}
+  .stt:focus {
+    opacity: 0.9;
+}
+  .stt:active {
+    opacity: 1;
+}
+footer {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    background-image: url(images/fall/background.png);
+    background-size: cover;
+}
+.footer_container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+.footerleft{
+    text-align:left;
+}
+.footerleft p {
+    font-size: 12px;
+    padding-top: 10px;
+    color: #F0ECE1;
+}
+.footerright {
+    text-align: right;
+    font-size: 12px;
+}
+ .social_image img {
+    padding-left: 20px;
+}

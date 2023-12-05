@@ -1,0 +1,109 @@
+@import url("https://use.typekit.net/dkq5oje.css");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "rufina", sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    background-color:#F0ECE1 ;
+    color: #60535A;
+    line-height: 1.5;
+}
+
+.header {
+    margin-top: 50px;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.nav {
+    font-family: 'East Sea Dokdo', sans-serif;
+    float: right;
+}
+.nav a {
+    text-decoration: none;
+    color: #60535A;
+    font-size: 20px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+span {
+    color: #60535A;
+    display: block;
+    transition: 1s;
+}
+.nav a:hover {
+    color: #D7AC8A;
+}
+a:hover span{
+    transform: translateY(-100%);
+}
+a:before {
+    position: absolute;
+    content: attr(data-link-alt);
+    top: 100%;
+    opacity: o;
+    transition: 1s;
+}
+a:hover:before {
+    top: 0;
+}
+
+.nav li {
+    display: inline-block;
+    padding-top: 30px;
+    margin-left: 70px;
+}
+ul, li {
+    list-style: none;
+}
+
+.main1 {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 70px;
+    text-align: center;
+}
+.main1 h1 {
+    font-family: "rufina", sans-serif;
+    font-size: 53px;
+    line-height: 1.5;
+}
+.main1 p {
+    font-size: 18px;
+    padding-top: 60px;
+}
+footer {
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: right;
+    padding-top: 230px;
+    padding-bottom: 30px;
+}
+.footer_container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    justify-content: space-between;
+}
+.footerleft{
+    text-align:left;
+}
+.footerleft p {
+    font-size: 12px;
+    color: #F0ECE1;
+}
+.footerright {
+    text-align: right;
+}
+ .social img {
+    padding-left: 20px;
+}
